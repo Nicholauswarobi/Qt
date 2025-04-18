@@ -1,0 +1,44 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 639,
+                        "errorMessage": "",
+                        "functionName": "source",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 17,
+                        "durationMicroseconds": 179,
+                        "errorMessage": "",
+                        "functionName": "source",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 18,
+                        "durationMicroseconds": 181,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 169,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 19
+                    }
+                ],
+                "filepath": "C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaControls/CustomButton.qml"
+            }
+        ],
+        "moduleId": "MediaControls(MediaControls)"
+    }
+]

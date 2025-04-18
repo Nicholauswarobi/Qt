@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Config/">
+    <file alias="Config.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/Config/Config.qml</file>
+  </qresource>
+</RCC>
+

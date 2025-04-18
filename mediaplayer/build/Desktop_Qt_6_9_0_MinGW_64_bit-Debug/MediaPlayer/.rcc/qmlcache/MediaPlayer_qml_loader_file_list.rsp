@@ -1,0 +1,16 @@
+--resource
+C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/MediaPlayer/.qt/rcc/qmake_MediaPlayer.qrc
+--resource
+C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/MediaPlayer/.qt/rcc/MediaPlayer_raw_qml_0.qrc
+/qt/qml/MediaPlayer/Main.qml
+/qt/qml/MediaPlayer/Images.qml
+/qt/qml/MediaPlayer/MetadataInfo.qml
+/qt/qml/MediaPlayer/PlayerMenuBar.qml
+/qt/qml/MediaPlayer/TracksInfo.qml
+/qt/qml/MediaPlayer/TracksOptions.qml
+/qt/qml/MediaPlayer/PlaylistInfo.qml
+/qt/qml/MediaPlayer/UrlPopup.qml
+/qt/qml/MediaPlayer/SettingsInfo.qml
+/qt/qml/MediaPlayer/ThemeInfo.qml
+/qt/qml/MediaPlayer/ErrorPopup.qml
+/qt/qml/MediaPlayer/TouchMenu.qml

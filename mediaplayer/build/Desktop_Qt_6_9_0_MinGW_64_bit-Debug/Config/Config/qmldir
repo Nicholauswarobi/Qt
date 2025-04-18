@@ -1,0 +1,8 @@
+module Config
+linktarget Configplugin
+optional plugin Configplugin
+classname ConfigPlugin
+typeinfo Config.qmltypes
+prefer :/qt/qml/Config/
+singleton Config 254.0 Config.qml
+

@@ -1,0 +1,12 @@
+--resource
+C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/MediaControls/.qt/rcc/qmake_MediaControls.qrc
+--resource
+C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/MediaControls/.qt/rcc/MediaControls_raw_qml_0.qrc
+/qt/qml/MediaControls/AudioControl.qml
+/qt/qml/MediaControls/ControlImages.qml
+/qt/qml/MediaControls/PlaybackSeekControl.qml
+/qt/qml/MediaControls/PlaybackRateControl.qml
+/qt/qml/MediaControls/PlaybackControl.qml
+/qt/qml/MediaControls/CustomSlider.qml
+/qt/qml/MediaControls/CustomButton.qml
+/qt/qml/MediaControls/CustomRadioButton.qml

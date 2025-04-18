@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="/qt/qml/MediaPlayer/">
+    <file alias="Main.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/Main.qml</file>
+    <file alias="Images.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/Images.qml</file>
+    <file alias="MetadataInfo.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/MetadataInfo.qml</file>
+    <file alias="PlayerMenuBar.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/PlayerMenuBar.qml</file>
+    <file alias="TracksInfo.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/TracksInfo.qml</file>
+    <file alias="TracksOptions.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/TracksOptions.qml</file>
+    <file alias="PlaylistInfo.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/PlaylistInfo.qml</file>
+    <file alias="UrlPopup.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/UrlPopup.qml</file>
+    <file alias="SettingsInfo.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/SettingsInfo.qml</file>
+    <file alias="ThemeInfo.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/ThemeInfo.qml</file>
+    <file alias="ErrorPopup.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/ErrorPopup.qml</file>
+    <file alias="TouchMenu.qml">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/TouchMenu.qml</file>
+    <file alias="icons/Shadow.png">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Shadow.png</file>
+    <file alias="icons/Shadow@2x.png">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Shadow@2x.png</file>
+    <file alias="icons/Default_CoverArt.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Default_CoverArt.svg</file>
+    <file alias="icons/Movie_Active.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Movie_Active.svg</file>
+    <file alias="icons/Movie_Icon_Dark.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Movie_Icon_Dark.svg</file>
+    <file alias="icons/Movie_Icon.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Movie_Icon.svg</file>
+    <file alias="icons/Music_Active.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Music_Active.svg</file>
+    <file alias="icons/Music_Icon_Dark.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Music_Icon_Dark.svg</file>
+    <file alias="icons/Music_Icon.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Music_Icon.svg</file>
+    <file alias="icons/Warning_Icon.svg">C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/icons/Warning_Icon.svg</file>
+  </qresource>
+</RCC>
+

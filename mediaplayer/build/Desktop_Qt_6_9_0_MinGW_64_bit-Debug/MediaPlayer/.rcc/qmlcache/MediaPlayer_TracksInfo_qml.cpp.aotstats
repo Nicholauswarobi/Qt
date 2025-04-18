@@ -1,0 +1,132 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 550,
+                        "errorMessage": "",
+                        "functionName": "contentWidth",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 542,
+                        "errorMessage": "",
+                        "functionName": "contentHeight",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "boundsBehavior",
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 161,
+                        "errorMessage": "",
+                        "functionName": "flickableDirection",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "selectedTrack",
+                        "line": 33
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 367,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: QMediaPlayer::audioTracks with type QMediaMetaData (stored as QVariant) -> QMediaPlayer::audioTracks with type QMediaMetaData (stored as QVariant)",
+                        "functionName": "metaData",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 1207,
+                        "errorMessage": "",
+                        "functionName": "onSelectedTrackChanged",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 195,
+                        "errorMessage": "",
+                        "functionName": "selectedTrack",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 321,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: QMediaPlayer::videoTracks with type QMediaMetaData (stored as QVariant) -> QMediaPlayer::videoTracks with type QMediaMetaData (stored as QVariant)",
+                        "functionName": "metaData",
+                        "line": 42
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 438,
+                        "errorMessage": "",
+                        "functionName": "onSelectedTrackChanged",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 190,
+                        "errorMessage": "",
+                        "functionName": "selectedTrack",
+                        "line": 49
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 335,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: QMediaPlayer::subtitleTracks with type QMediaMetaData (stored as QVariant) -> QMediaPlayer::subtitleTracks with type QMediaMetaData (stored as QVariant)",
+                        "functionName": "metaData",
+                        "line": 50
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 548,
+                        "errorMessage": "",
+                        "functionName": "onSelectedTrackChanged",
+                        "line": 51
+                    }
+                ],
+                "filepath": "C:/Qt/Examples/Qt-6.9.0/demos/mediaplayer/MediaPlayer/TracksInfo.qml"
+            }
+        ],
+        "moduleId": "MediaPlayer(MediaPlayer)"
+    }
+]
