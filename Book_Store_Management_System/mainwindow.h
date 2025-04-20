@@ -1,5 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include "adddialog.h"
 
 #include <QMainWindow>
 
@@ -22,5 +23,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    AddDialog *AddBox;
 };
 #endif // MAINWINDOW_H
