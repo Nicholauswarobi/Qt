@@ -20,6 +20,7 @@ public:
 
 private slots:
     void on_Add_pushButton_clicked();
+    void OnAddBook(const QString &name, const QString &price);
 
 private:
     Ui::MainWindow *ui;

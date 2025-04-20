@@ -23,7 +23,7 @@ void AddDialog::on_Add_Book_Button_clicked()
     QString BookName = ui->BookName_lineEdit->text();
     QString BookPrice = ui->BookPrice_lineEdit->text();
 
-    BookDetails(BookName, BookPrice);
+    emit BookDetails(BookName, BookPrice);
 
 }
 

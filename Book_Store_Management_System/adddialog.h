@@ -15,6 +15,8 @@ public:
     explicit AddDialog(QWidget *parent = nullptr);
     ~AddDialog();
 
+    void BookDetails(const QString &name, const QString &price);
+
 private slots:
     void on_pushButton_clicked();
 
