@@ -20,14 +20,15 @@ MainWindow::~MainWindow()
     delete AddBox;
 }
 
-// Book details List
-QStringList BookList;
-QStringList PriceList;
-
+// To Show the Dialog When Add Button Clicked
 void MainWindow::on_Add_pushButton_clicked()
 {
     AddBox->show();
 }
+
+// Book details List
+QStringList BookList;
+QStringList PriceList;
 
 // functions to add book
 void MainWindow::OnAddBook(const QString &name, const QString &price){
