@@ -32,6 +32,7 @@ QStringList PriceList;
 
 // functions to add book
 void MainWindow::OnAddBook(const QString &name, const QString &price){
-
+    BookList.append(name);
+    PriceList.append(price);
 }
 
