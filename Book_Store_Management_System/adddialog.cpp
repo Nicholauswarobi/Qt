@@ -12,3 +12,9 @@ AddDialog::~AddDialog()
 {
     delete ui;
 }
+
+void AddDialog::on_pushButton_clicked()
+{
+
+}
+
