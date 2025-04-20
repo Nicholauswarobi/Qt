@@ -9,9 +9,16 @@ MainWindow::MainWindow(QWidget *parent)
     , AddBox(new AddDialog(this))
 {
     ui->setupUi(this);
-    connect(ui->Add_pushButton, &QPushButton::clicked, this,
-                &MainWindow::on_Add_pushButton_clicked);
 
+    // Connecting to AddBook PushButton
+    connect(ui->Add_pushButton, &QPushButton::clicked, this,
+                &MainWindow::on_Add_BookFun);
+
+    // Connecting to AddBook PushButton
+    connect(ui->Purchase_pushButton, &QPushButton::clicked, this,
+                &MainWindow::on_PurchaseFun)
+
+    // Connecting to AddBookDialog
     connect(AddBox, &AddDialog::BookDetails, this, &MainWindow::OnAddBook);
 }
 
@@ -22,7 +29,7 @@ MainWindow::~MainWindow()
 }
 
 // To Show the Dialog When Add Button Clicked
-void MainWindow::on_Add_pushButton_clicked()
+void MainWindow::on_Add_BookFun()
 {
     AddBox->show();
 }
