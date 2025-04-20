@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "QStringList"
+#include "QMessageBox"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -34,5 +35,10 @@ QStringList PriceList;
 void MainWindow::OnAddBook(const QString &name, const QString &price){
     BookList.append(name);
     PriceList.append(price);
+
+    QString msg = "New Book Added Successfully!!";
+    QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
+
+
 }
 
