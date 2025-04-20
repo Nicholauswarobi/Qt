@@ -4,6 +4,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , AddBox(new AddDialog(this))
 {
     ui->setupUi(this);
     connect(ui->Add_pushButton, &QPushButton::clicked, this,
@@ -13,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete AddBox;
 }
 
 
