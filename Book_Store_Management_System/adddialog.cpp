@@ -6,6 +6,9 @@ AddDialog::AddDialog(QWidget *parent)
     , ui(new Ui::AddDialog)
 {
     ui->setupUi(this);
+
+    connect(ui->Add_Book_Button, &QPushButton::clicked, this,
+            &AddDialog::on_Add_Book_Button_clicked);
 }
 
 AddDialog::~AddDialog()
@@ -13,7 +16,9 @@ AddDialog::~AddDialog()
     delete ui;
 }
 
-void AddDialog::on_pushButton_clicked()
+
+
+void AddDialog::on_Add_Book_Button_clicked()
 {
 
 }
