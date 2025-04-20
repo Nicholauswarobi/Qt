@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->Add_pushButton, &QPushButton::clicked, this,
+                &MainWindow::on_Add_pushButton_clicked);
 }
 
 MainWindow::~MainWindow()

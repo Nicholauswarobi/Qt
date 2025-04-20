@@ -61,7 +61,7 @@
         <height>540</height>
        </size>
       </property>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="Add_pushButton">
        <property name="geometry">
         <rect>
          <x>250</x>
@@ -100,7 +100,7 @@ border: 4px solid  rgb(0, 0, 127);
         <string>ADD</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="Purchase_pushButton">
        <property name="geometry">
         <rect>
          <x>250</x>
