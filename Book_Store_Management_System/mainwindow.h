@@ -22,6 +22,8 @@ private slots:
     void on_Add_pushButton_clicked();
     void OnAddBook(const QString &name, const QString &price);
 
+    void on_Purchase_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     AddDialog *AddBox;

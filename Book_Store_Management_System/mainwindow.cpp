@@ -42,3 +42,9 @@ void MainWindow::OnAddBook(const QString &name, const QString &price){
 
 }
 
+
+void MainWindow::on_Purchase_pushButton_clicked()
+{
+
+}
+
