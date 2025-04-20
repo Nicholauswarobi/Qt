@@ -20,6 +20,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Add_pushButton_clicked()
 {
-
+    AddBox->show();
 }
 
