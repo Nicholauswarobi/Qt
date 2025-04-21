@@ -68,7 +68,7 @@ QStringList PBookList;
 QStringList PQuantityList;
 
 // functions to add book
-void MainWindow::OnAddBook(const QString &Pname, const QString &PQuantity){
+void MainWindow::OnPurchaseBook(const QString &Pname, const QString &PQuantity){
     PBookList.append(Pname);
     PQuantityList.append(PQuantity);
 
