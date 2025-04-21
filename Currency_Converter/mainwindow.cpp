@@ -26,6 +26,7 @@ void MainWindow::on_Convert_pushButton_clicked()
     double Ulocal_INT = ULocal.toDouble();
     QString UInternational = ui->International_lineEdit->text();
 
+// conditions for converting currency
     if (UInternational == "Dollar"){
 
         double result = Ulocal_INT / Dollar;
