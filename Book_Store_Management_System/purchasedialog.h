@@ -15,6 +15,9 @@ public:
     explicit PurchaseDialog(QWidget *parent = nullptr);
     ~PurchaseDialog();
 
+signals:
+    void PurchaseBookDetails(const QString &Pname, const QString &PQuantity);
+
 private slots:
     void on_Purchase_Book_Button_Fun();
 

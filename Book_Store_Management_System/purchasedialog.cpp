@@ -17,6 +17,9 @@ PurchaseDialog::~PurchaseDialog()
 
 void PurchaseDialog::on_Purchase_Book_Fun()
 {
+    QString PurBookName = ui->Purchase_BookName_lineEdit->text();
+    QString PurQuantity = ui->BookQuantity_lineEdit->text();
 
+    emit PurchaseBookDetails(PurBookName, PurQuantity);
 }
 
