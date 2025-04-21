@@ -76,7 +76,7 @@ void MainWindow::OnPurchaseBook(const QString &Pname, const QString &PQuantity){
             int Bill = Book_Price * Purchase_quantity;
             QString Total_bill = QString::number(Bill);
 
-            QString msg = "Purchased Book Successfully!!" + "\n" + "Total Bill: " +
+            QString msg = QString("Purchased Book Successfully!!\n") + "Total Bill: " +
                             Total_bill;
             QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
