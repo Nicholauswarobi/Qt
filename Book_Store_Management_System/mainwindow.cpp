@@ -49,6 +49,7 @@ void MainWindow::on_PurchaseFun(){
 // Book details List
 QStringList BookList;
 QStringList PriceList;
+bool found = false;
 
 // functions to add book
 void MainWindow::OnAddBook(const QString &name, const QString &price){
@@ -62,15 +63,13 @@ void MainWindow::OnAddBook(const QString &name, const QString &price){
 }
 
 
-
-// Purchase details List
-QStringList PBookList;
-QStringList PQuantityList;
-
-// functions to add book
+// functions to purchase book
 void MainWindow::OnPurchaseBook(const QString &Pname, const QString &PQuantity){
-    PBookList.append(Pname);
-    PQuantityList.append(PQuantity);
+    for(int i = 0; i < BookList.length(); i++){
+        if (Pname == BookList[i]){
+            found = true;
+        }
+    }
 
     QString msg = "Purchased Book Successfully!!";
     QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
