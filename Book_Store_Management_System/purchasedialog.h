@@ -16,7 +16,7 @@ public:
     ~PurchaseDialog();
 
 private slots:
-    void on_Purchase_Book_Button_clicked();
+    void on_Purchase_Book_Button_Fun();
 
 private:
     Ui::PurchaseDialog *ui;

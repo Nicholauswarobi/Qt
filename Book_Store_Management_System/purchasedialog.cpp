@@ -13,7 +13,7 @@ PurchaseDialog::~PurchaseDialog()
     delete ui;
 }
 
-void PurchaseDialog::on_Purchase_Book_Button_clicked()
+void PurchaseDialog::on_Purchase_Book_Fun()
 {
 
 }
