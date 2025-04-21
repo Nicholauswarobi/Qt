@@ -23,6 +23,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Fee_Management_System
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        submitdialog.h submitdialog.cpp submitdialog.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Fee_Management_System APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
