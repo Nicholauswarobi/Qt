@@ -15,6 +15,9 @@ public:
     explicit SubmitDialog(QWidget *parent = nullptr);
     ~SubmitDialog();
 
+signals:
+    void getFeeValue(const QString &roll, const QString &fAmount);
+
 private slots:
     void on_Submit_Fee_Fun();
 

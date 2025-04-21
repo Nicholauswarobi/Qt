@@ -17,6 +17,9 @@ SubmitDialog::~SubmitDialog()
 
 void SubmitDialog::on_Submit_Fee_Fun()
 {
+    QString rollNo = ui->RollNo_lineEdit->text();
+    QString feeAmount = ui->FeeAmount_lineEdit->text();
 
+    emit getFeeValue(rollNo, feeAmount);
 }
 

@@ -20,6 +20,7 @@ public:
 
 private slots:
     void on_SubmitFun();
+    void OnGetFee(const QString &roll, const QString &fAmount);
 
 private:
     Ui::MainWindow *ui;
