@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "QMessageBox"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -28,6 +29,7 @@ void MainWindow::on_Convert_pushButton_clicked()
     if (UInternational == "Dollar"){
 
         int result = Ulocal_INT / Dollar;
+
     }
 }
 
