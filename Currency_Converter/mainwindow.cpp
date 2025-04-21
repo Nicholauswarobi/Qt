@@ -41,7 +41,7 @@ void MainWindow::on_Convert_pushButton_clicked()
         double result = Ulocal_INT / Euro;
 
         QString msg = QString("You are successfully convert") + "\n"
-                      + "Euro: " + QString::number(result);
+                      + "Your Currency is Equal to:" + QString::number(result) + ;
         QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
     }
@@ -51,7 +51,7 @@ void MainWindow::on_Convert_pushButton_clicked()
         double result = Ulocal_INT / Pound;
 
         QString msg = QString("You are successfully convert") + "\n"
-                      + "Pound: " + QString::number(result);
+                      + "Your Currency is Equal to: " + QString::number(result) + "Pound";
         QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
     }
