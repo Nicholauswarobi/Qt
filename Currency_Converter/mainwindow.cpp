@@ -30,6 +30,8 @@ void MainWindow::on_Convert_pushButton_clicked()
 
         int result = Ulocal_INT / Dollar;
 
+        QString msg = "You are successfully convert" + "\n" + "Dollar: " + result;
+
     }
 }
 
