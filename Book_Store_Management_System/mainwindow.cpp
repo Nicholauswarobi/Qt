@@ -50,8 +50,4 @@ void MainWindow::OnAddBook(const QString &name, const QString &price){
 }
 
 // Purchase Function
-void MainWindow::on_PurchaseFun()
-{
-
-}
 

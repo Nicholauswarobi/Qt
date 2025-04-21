@@ -19,7 +19,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_Add_pushButton_clicked();
+    void on_Add_BookFun();
     void OnAddBook(const QString &name, const QString &price);
 
     void on_PurchaseFun();
