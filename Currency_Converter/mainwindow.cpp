@@ -17,9 +17,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Convert_pushButton_clicked()
 {
-    int Dollar = 2500;
-    int Euro = 30;
-    int Pound = 20;
+    int Dollar = 2700;
+    int Euro = 3100;
+    int Pound = 3600;
 
 
     QString ULocal = ui->Local_lineEdit->text();
@@ -27,6 +27,17 @@ void MainWindow::on_Convert_pushButton_clicked()
     QString UInternational = ui->International_lineEdit->text();
 
     if (UInternational == "Dollar"){
+
+        int result = Ulocal_INT / Dollar;
+
+        QString msg = QString("You are successfully convert") + "\n"
+                      + "Dollar: " + QString::number(result);
+        QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
+
+    }
+
+
+    if (UInternational == "Euro"){
 
         int result = Ulocal_INT / Dollar;
 
