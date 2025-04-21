@@ -58,7 +58,7 @@ void MainWindow::on_Convert_pushButton_clicked()
 
     else{
         QString msg = QString("Invalid Inputs");
-        QMessageBox::information(this, "Error Message", msg, QMessageBox::Ok);
+        QMessageBox::warning(this, "Error Message", msg, QMessageBox::Ok);
     }
 
 
