@@ -18,6 +18,7 @@ AddDialog::~AddDialog()
 
 
 
+// Take details from the purchase dialog
 void AddDialog::on_Add_Book_Button_clicked()
 {
     QString BookName = ui->BookName_lineEdit->text();
