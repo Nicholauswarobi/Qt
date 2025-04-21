@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , AddBox(new AddDialog(this))
+    , PurchaseBox(new PurchaseDialog(this))
 {
     ui->setupUi(this);
 
@@ -16,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Connecting to AddBook PushButton
     connect(ui->Purchase_pushButton, &QPushButton::clicked, this,
-                &MainWindow::on_PurchaseFun)
+            &MainWindow::on_PurchaseFun);
 
     // Connecting to AddBookDialog
     connect(AddBox, &AddDialog::BookDetails, this, &MainWindow::OnAddBook);
@@ -26,6 +27,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete AddBox;
+    delete PurchaseBox;
 }
 
 // To Show the Dialog When Add Button Clicked
@@ -33,6 +35,8 @@ void MainWindow::on_Add_BookFun()
 {
     AddBox->show();
 }
+
+// To Show the Dialog When Add Button Clicked
 
 // Book details List
 QStringList BookList;
@@ -50,4 +54,4 @@ void MainWindow::OnAddBook(const QString &name, const QString &price){
 }
 
 // Purchase Function
-
+void on_PurchaseFun();
