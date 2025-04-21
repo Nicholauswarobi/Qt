@@ -6,9 +6,16 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->Convert_pushButton, &QPushButton::clicked, &MainWindow::on_Convert_pushButton_clicked);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_Convert_pushButton_clicked()
+{
+
+}
+
