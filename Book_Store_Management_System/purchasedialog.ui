@@ -124,6 +124,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QLineEdit{
+	color: rgb(255, 0, 77);
 	background-color: rgb(198, 201, 255);
 	border: 3px solid #ff2bed;
 	border-radius: 7px;
@@ -150,6 +151,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QLineEdit{
+	color: rgb(255, 0, 77);
 	background-color: rgb(198, 201, 255);
 	border: 3px solid #ff2bed;
 	border-radius: 7px;

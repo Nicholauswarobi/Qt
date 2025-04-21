@@ -7,7 +7,7 @@ PurchaseDialog::PurchaseDialog(QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->Purchase_Book_Button, &QPushButton::clicked, this,
-            &PurchaseDialog::on_Purchase_Book_Button_Fun);
+            &PurchaseDialog::on_Purchase_Book_Fun);
 }
 
 PurchaseDialog::~PurchaseDialog()

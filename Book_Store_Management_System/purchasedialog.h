@@ -19,7 +19,7 @@ signals:
     void PurchaseBookDetails(const QString &Pname, const QString &PQuantity);
 
 private slots:
-    void on_Purchase_Book_Button_Fun();
+    void on_Purchase_Book_Fun();
 
 private:
     Ui::PurchaseDialog *ui;
