@@ -37,12 +37,12 @@ void MainWindow::on_Convert_pushButton_clicked()
     }
 
 
-    if (UInternational == "Euro"){
+    else if (UInternational == "Euro"){
 
-        int result = Ulocal_INT / Dollar;
+        int result = Ulocal_INT / Euro;
 
         QString msg = QString("You are successfully convert") + "\n"
-                      + "Dollar: " + QString::number(result);
+                      + "Euro: " + QString::number(result);
         QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
     }
