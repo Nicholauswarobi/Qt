@@ -31,7 +31,7 @@ void MainWindow::on_Convert_pushButton_clicked()
         double result = Ulocal_INT / Dollar;
 
         QString msg = QString("You are successfully convert") + "\n"
-                      + "Your Currency is Equal to: " + QString::number(result);
+                      + "Your Currency is Equal to: " + QString::number(result) + "Dollar";
         QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
     }
