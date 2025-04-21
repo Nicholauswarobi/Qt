@@ -32,6 +32,8 @@ void MainWindow::on_Convert_pushButton_clicked()
 
         QString msg = "You are successfully convert" + "\n" + "Dollar: " + result;
 
+        QMessageBox::information(this, )
+
     }
 }
 
