@@ -32,7 +32,7 @@ void MainWindow::on_Convert_pushButton_clicked()
 
         QString msg = "You are successfully convert" + "\n" + "Dollar: " + result;
 
-        QMessageBox::information(this, )
+        QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
     }
 }
