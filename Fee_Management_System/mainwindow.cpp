@@ -6,9 +6,16 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->Submit_pushButton, &QPushButton::clicked, this, &MainWindow::on_Submit_pushButton_clicked);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_Submit_pushButton_clicked()
+{
+
+}
+
