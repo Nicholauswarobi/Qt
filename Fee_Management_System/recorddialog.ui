@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>SubmitDialog</class>
- <widget class="QDialog" name="SubmitDialog">
+ <class>RecordDialog</class>
+ <widget class="QDialog" name="RecordDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,11 +16,36 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(65, 98, 112);</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>194</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 156, 194);</string>
+   </property>
+   <property name="text">
+    <string>FEE RECORD</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>60</y>
+     <y>50</y>
      <width>421</width>
      <height>281</height>
     </rect>
@@ -101,7 +126,7 @@
      <string>Enter fee amount</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Submit_Fee_pushButton">
+   <widget class="QPushButton" name="Record_Fee_pushButton">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -126,7 +151,7 @@
 </string>
     </property>
     <property name="text">
-     <string>Submit</string>
+     <string>Record</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="FeeAmount_lineEdit">
@@ -155,31 +180,6 @@
      <string>Enter fee amount</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>10</y>
-     <width>187</width>
-     <height>44</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>25</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 156, 194);</string>
-   </property>
-   <property name="text">
-    <string>SUBMIT FEE</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
-   </property>
   </widget>
  </widget>
  <resources/>

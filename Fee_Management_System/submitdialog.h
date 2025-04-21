@@ -15,6 +15,9 @@ public:
     explicit SubmitDialog(QWidget *parent = nullptr);
     ~SubmitDialog();
 
+private slots:
+    void on_Submit_Fee_Fun();
+
 private:
     Ui::SubmitDialog *ui;
 };
