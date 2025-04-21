@@ -68,11 +68,24 @@ void MainWindow::OnPurchaseBook(const QString &Pname, const QString &PQuantity){
     for(int i = 0; i < BookList.length(); i++){
         if (Pname == BookList[i]){
             found = true;
+
+            int Purchase_quantity = PQuantity.toInt();
+            QString BPrice = PriceList[i];
+            int Book_Price = BPrice.toInt();
+
+            int Bill = Book_Price * Purchase_quantity;
+            QString Total_bill = QString::number(Bill);
+
+            QString msg = "Purchased Book Successfully!!" + "\n" + "Total Bill: " +
+                            Total_bill;
+            QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
+
         }
     }
-
-    QString msg = "Purchased Book Successfully!!";
-    QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
+    if (!found){
+        QString msg = "Purchasing failed or Book not found!!";
+        QMessageBox::warning(this, "Success Message", msg, QMessageBox::Ok);
+    }
 
 }
 
