@@ -23,12 +23,12 @@ void MainWindow::on_Convert_pushButton_clicked()
 
 
     QString ULocal = ui->Local_lineEdit->text();
-    int Ulocal_INT = ULocal.toInt();
+    double Ulocal_INT = ULocal.toDouble();
     QString UInternational = ui->International_lineEdit->text();
 
     if (UInternational == "Dollar"){
 
-        int result = Ulocal_INT / Dollar;
+        double result = Ulocal_INT / Dollar;
 
         QString msg = QString("You are successfully convert") + "\n"
                       + "Dollar: " + QString::number(result);
@@ -39,7 +39,7 @@ void MainWindow::on_Convert_pushButton_clicked()
 
     else if (UInternational == "Euro"){
 
-        int result = Ulocal_INT / Euro;
+        double result = Ulocal_INT / Euro;
 
         QString msg = QString("You are successfully convert") + "\n"
                       + "Euro: " + QString::number(result);
