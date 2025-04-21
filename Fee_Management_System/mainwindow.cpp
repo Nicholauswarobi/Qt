@@ -20,6 +20,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_SubmitFun()
 {
-
+    submitBox->show();
 }
 
