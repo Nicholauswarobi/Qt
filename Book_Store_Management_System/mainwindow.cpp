@@ -61,7 +61,9 @@ void MainWindow::OnAddBook(const QString &name, const QString &price){
 
 }
 
-// Book details List
+
+
+// Purchase details List
 QStringList PBookList;
 QStringList PQuantityList;
 
@@ -72,7 +74,6 @@ void MainWindow::OnAddBook(const QString &Pname, const QString &PQuantity){
 
     QString msg = "Purchased Book Successfully!!";
     QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
-
 
 }
 
