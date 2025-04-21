@@ -17,7 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Convert_pushButton_clicked()
 {
-    int Dollar = 50;
+    int Dollar = 2500;
     int Euro = 30;
     int Pound = 20;
 
