@@ -37,6 +37,10 @@ void MainWindow::on_Add_BookFun()
 }
 
 // To Show the Dialog When Add Button Clicked
+void MainWindow::on_PurchaseFun(){
+
+    PurchaseBox->show();
+}
 
 // Book details List
 QStringList BookList;
