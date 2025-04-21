@@ -16,6 +16,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Convert_pushButton_clicked()
 {
+    int Dollar = 50;
+    int Euro = 30;
+    int Pound = 20;
 
+    QString ULocal = ui->Local_lineEdit->text();
+    QString UInternational = ui->International_lineEdit->text();
 }
 
