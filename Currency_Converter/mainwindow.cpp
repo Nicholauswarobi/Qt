@@ -36,7 +36,6 @@ void MainWindow::on_Convert_pushButton_clicked()
 
     }
 
-
     else if (UInternational == "Euro"){
 
         double result = Ulocal_INT / Euro;
@@ -46,5 +45,17 @@ void MainWindow::on_Convert_pushButton_clicked()
         QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
     }
+
+    else if (UInternational == "Pound"){
+
+        double result = Ulocal_INT / Pound;
+
+        QString msg = QString("You are successfully convert") + "\n"
+                      + "Pound: " + QString::number(result);
+        QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
+
+    }
+
+
 }
 
