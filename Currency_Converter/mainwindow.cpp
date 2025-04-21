@@ -57,7 +57,7 @@ void MainWindow::on_Convert_pushButton_clicked()
     }
 
     else{
-        QString msg = QString("Invalid Inputs");
+        QString msg = QString("Invalid Inputs or International Currency");
         QMessageBox::warning(this, "Error Message", msg, QMessageBox::Ok);
     }
 
