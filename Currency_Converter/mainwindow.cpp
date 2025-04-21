@@ -27,7 +27,7 @@ void MainWindow::on_Convert_pushButton_clicked()
 
     if (UInternational == "Dollar"){
 
-
+        int result = Ulocal_INT / Dollar;
     }
 }
 
