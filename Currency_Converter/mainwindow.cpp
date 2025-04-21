@@ -30,7 +30,7 @@ void MainWindow::on_Convert_pushButton_clicked()
 
         int result = Ulocal_INT / Dollar;
 
-        QString msg = "You are successfully convert" + "\n" + "Dollar: " + result;
+        QString msg = QString("You are successfully convert") + "\n" + "Dollar: " + QString::number(result);
 
         QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
 
