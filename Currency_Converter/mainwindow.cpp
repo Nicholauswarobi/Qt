@@ -17,6 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Convert_pushButton_clicked()
 {
+    // Variables for currency values at 1 Tsh is equal to
     int Dollar = 2700;
     int Euro = 3100;
     int Pound = 3600;
