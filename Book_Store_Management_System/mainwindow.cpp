@@ -21,6 +21,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Connecting to AddBookDialog
     connect(AddBox, &AddDialog::BookDetails, this, &MainWindow::OnAddBook);
+
+    // Connecting to PurchaseBookDialog
+    connect(PurchaseBox, &PurchaseDialog::PurchaseBookDetails, this,
+            &MainWindow::OnPurchaseBook);
 }
 
 MainWindow::~MainWindow()
@@ -57,5 +61,20 @@ void MainWindow::OnAddBook(const QString &name, const QString &price){
 
 }
 
-// Purchase Function
-void on_PurchaseFun();
+// Book details List
+QStringList PBookList;
+QStringList PQuantityList;
+
+// functions to add book
+void MainWindow::OnAddBook(const QString &Pname, const QString &PQuantity){
+    PBookList.append(Pname);
+    PQuantityList.append(PQuantity);
+
+    QString msg = "Purchased Book Successfully!!";
+    QMessageBox::information(this, "Success Message", msg, QMessageBox::Ok);
+
+
+}
+
+
+
