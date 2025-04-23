@@ -26,3 +26,7 @@ void MainWindow::on_SubmitFun()
     submitBox->show();
 }
 
+void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
+
+}
+
