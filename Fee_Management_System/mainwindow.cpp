@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "QStringList"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,6 +26,10 @@ void MainWindow::on_SubmitFun()
 {
     submitBox->show();
 }
+
+
+// Lists
+QStringList RollNoList =  {"100", "101", "102", "103"};
 
 void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
 
