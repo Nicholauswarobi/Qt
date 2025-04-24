@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Submit_pushButton, &QPushButton::clicked, this,
             &MainWindow::on_SubmitFun);
 
+    // Connection from Submit dialog fun
     connect(submitBox, &SubmitDialog::getFeeValue, this,
             &MainWindow::OnGetFee);
 }
