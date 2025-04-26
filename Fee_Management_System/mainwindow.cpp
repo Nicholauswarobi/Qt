@@ -85,3 +85,8 @@ void MainWindow::on_RecordFun()
     recordBox->show();
 }
 
+
+void MainWindow::OnGetRecord(const QString &RrollNo){
+
+}
+
