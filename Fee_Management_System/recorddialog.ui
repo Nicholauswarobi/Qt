@@ -107,10 +107,10 @@
    <widget class="QPushButton" name="Record_Fee_pushButton">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>190</y>
-      <width>141</width>
-      <height>51</height>
+      <x>120</x>
+      <y>160</y>
+      <width>171</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -129,7 +129,7 @@
 </string>
     </property>
     <property name="text">
-     <string>Record</string>
+     <string>View Record</string>
     </property>
    </widget>
   </widget>
