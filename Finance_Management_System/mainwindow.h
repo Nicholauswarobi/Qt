@@ -1,5 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include "incomedialog.h"
 
 #include <QMainWindow>
 
@@ -18,10 +19,11 @@ public:
     ~MainWindow();
 
 private slots:
-
     void on_Income_Fun();
+    void OnGetIncome(const QString &Itype, const QString &IAmount);
 
 private:
     Ui::MainWindow *ui;
+    IncomeDialog incomeBox;
 };
 #endif // MAINWINDOW_H
