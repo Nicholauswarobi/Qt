@@ -45,6 +45,7 @@ QStringList FeeList = {"4000", "5000", "3000", "2000"};
 QStringList PaidList = {"0", "0", "0", "0"};
 QStringList PendingList = {"4000", "5000", "3000", "2000"};
 bool found = false;
+bool RecFound = false;
 
 void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
     for(int i = 0; i < RollNoList.length(); i++){
@@ -73,7 +74,7 @@ void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
 
     if(!found){
         QString msg = "Invalid Roll Number";
-        QMessageBox::information(this, "Error Message", msg);
+        QMessageBox::warning(this, "Error Message", msg);
 
     }
 
@@ -87,6 +88,24 @@ void MainWindow::on_RecordFun()
 
 
 void MainWindow::OnGetRecord(const QString &RrollNo){
+    for(int i = 0; i < RollNoList.length(); i++){
+        if(RrollNo == RollNoList[i]){
+            RecFound = true;
 
+            QString msg = "Total Fee: " + FeeList[i]+"\n"
+                          "Total Paid Fee: " + PaidList[i] + "\n"
+                        "Pending Fee: " + PendingList[i];
+
+            QMessageBox::information(this, "Success Message", msg);
+
+            break;
+        }
+    }
+
+    if(!RecFound){
+        QString msg = "Roll Number not found!!";
+
+        QMessageBox::warning(this, "Error Message", msg);
+    }
 }
 
