@@ -32,6 +32,8 @@ void MainWindow::on_SubmitFun()
 // Lists
 QStringList RollNoList =  {"100", "101", "102", "103"};
 QStringList FeeList = {"4000", "5000", "3000", "2000"};
+QStringList PaidList = {"0", "0", "0", "0"};
+QStringList PendingList = {"4000", "5000", "3000", "2000"};
 
 void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
     for(int i = 0; i < roll; i++){
