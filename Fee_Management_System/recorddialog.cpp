@@ -17,6 +17,8 @@ RecordDialog::~RecordDialog()
 
 void RecordDialog::on_Record_Fee_Fun()
 {
+    QString rRecord_RollNo = ui->RollNo_lineEdit->text();
 
+    emit getRecordValue(rRecord_RollNo);
 }
 

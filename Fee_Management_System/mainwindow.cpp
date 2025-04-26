@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , submitBox(new SubmitDialog(this))
+    , recordBox(new RecordDialog(this))
 {
     ui->setupUi(this);
     // Connect to Submit button
@@ -20,12 +21,16 @@ MainWindow::MainWindow(QWidget *parent)
     // Connection from Submit dialog fun
     connect(submitBox, &SubmitDialog::getFeeValue, this,
             &MainWindow::OnGetFee);
+
+    connect(recordBox, &RecordDialog::getRecordValue, this,
+            &MainWindow::OnGetRecord);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
     delete submitBox;
+    delete recordBox;
 }
 
 void MainWindow::on_SubmitFun()
@@ -77,6 +82,6 @@ void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
 
 void MainWindow::on_RecordFun()
 {
-
+    recordBox->show();
 }
 

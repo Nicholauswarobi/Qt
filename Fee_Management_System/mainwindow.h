@@ -24,6 +24,7 @@ private slots:
     void OnGetFee(const QString &roll, const QString &fAmount);
 
     void on_RecordFun();
+    void OnGetRecord(const QString &RrollNo);
 
 private:
     Ui::MainWindow *ui;

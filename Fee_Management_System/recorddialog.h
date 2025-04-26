@@ -15,6 +15,9 @@ public:
     explicit RecordDialog(QWidget *parent = nullptr);
     ~RecordDialog();
 
+signals:
+    void getRecordValue(const QString &RrollNo);
+
 private slots:
     void on_Record_Fee_Fun();
 
