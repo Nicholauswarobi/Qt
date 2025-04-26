@@ -17,6 +17,10 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+
+    void on_Income_Fun();
+
 private:
     Ui::MainWindow *ui;
 };
