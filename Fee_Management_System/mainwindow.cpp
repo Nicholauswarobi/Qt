@@ -51,9 +51,20 @@ void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
             int totalPending = PendingList_int + fAmount_int;
             PendingList[i] = QString::number(totalPending);
 
+            QString msg = "Fee Submitted: "+fAmount+"\n"
+                          "Total Paid Fee: " + PaidList[i]+"\n"
+                            "Pending Dues: " + PendingList[i] + "Out of " + FeeList[i];
+
+            QMessageBox::information(this, "Success Message", msg);
 
             break;
         }
+
+    }
+
+    if(!found){
+        QString msg = "Invalid Roll Number";
+        QMessageBox::information(this, "Error Message", msg);
 
     }
 
