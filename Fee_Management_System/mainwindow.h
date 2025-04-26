@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "submitdialog.h"
+#include "recorddialog.h"
 
 #include <QMainWindow>
 
@@ -27,5 +28,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     SubmitDialog *submitBox;
+    RecordDialog *recordBox;
+
 };
 #endif // MAINWINDOW_H

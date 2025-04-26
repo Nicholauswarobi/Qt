@@ -56,28 +56,6 @@
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>120</y>
-      <width>39</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 156, 194);</string>
-    </property>
-    <property name="text">
-     <string>Fee:</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
@@ -152,32 +130,6 @@
     </property>
     <property name="text">
      <string>Record</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="FeeAmount_lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>120</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(14, 21, 33);
-	background-color: rgb(225, 228, 255);
-	border: 3px solid #cba9ff;
-	border-radius: 6px;
-}</string>
-    </property>
-    <property name="placeholderText">
-     <string>Enter fee amount</string>
     </property>
    </widget>
   </widget>
