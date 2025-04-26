@@ -85,7 +85,7 @@ void MainWindow::on_BalanceFun()
 
     else{
         QString msg = "Insufficient balance!!";
-        QMessageBox::information(this, "Profit", msg);
+        QMessageBox::warning(this, "Balance", msg);
     }
 }
 
