@@ -15,6 +15,9 @@ public:
     explicit RecordDialog(QWidget *parent = nullptr);
     ~RecordDialog();
 
+private slots:
+    void on_Record_Fee_Fun();
+
 private:
     Ui::RecordDialog *ui;
 };
