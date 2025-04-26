@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "QStringList"
+#include "QMessageBox"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,11 +28,17 @@ void MainWindow::on_Income_Fun()
     incomeBox.show();
 }
 
-QStringList IncomeList;
-QStringList ExpenseList;
+
+int totalIncome = 0;
+int totalExpense = 0;
 int balance = 0;
 
 void MainWindow::OnGetIncome(const QString &Itype, const QString &IAmount){
+    int income_amount = IAmount.toInt();
+    totalIncome += income_amount;
+
+    QString msg = "Amount: " + IAmount + " of " + Itype + " added successfully!!";
+    QMessageBox::information(this, "Success Message", msg);
 
 }
 
