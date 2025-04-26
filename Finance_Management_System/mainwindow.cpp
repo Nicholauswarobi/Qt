@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "QStringList"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,7 +27,9 @@ void MainWindow::on_Income_Fun()
     incomeBox.show();
 }
 
-
+QStringList IncomeList;
+QStringList ExpenseList;
+int balance = 0;
 
 void MainWindow::OnGetIncome(const QString &Itype, const QString &IAmount){
 
