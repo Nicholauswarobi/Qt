@@ -22,6 +22,8 @@ private slots:
     void on_SubmitFun();
     void OnGetFee(const QString &roll, const QString &fAmount);
 
+    void on_RecordFun();
+
 private:
     Ui::MainWindow *ui;
     SubmitDialog *submitBox;

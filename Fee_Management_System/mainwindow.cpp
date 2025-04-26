@@ -13,6 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Submit_pushButton, &QPushButton::clicked, this,
             &MainWindow::on_SubmitFun);
 
+    // Connect to Record button
+    connect(ui->Record_pushButton, &QPushButton::clicked, this,
+            &MainWindow::on_RecordFun);
+
     // Connection from Submit dialog fun
     connect(submitBox, &SubmitDialog::getFeeValue, this,
             &MainWindow::OnGetFee);
@@ -48,12 +52,12 @@ void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
             PaidList[i] = QString::number(totalPaid);
 
             int PendingList_int = PendingList[i].toInt();
-            int totalPending = PendingList_int + fAmount_int;
+            int totalPending = PendingList_int - fAmount_int;
             PendingList[i] = QString::number(totalPending);
 
             QString msg = "Fee Submitted: "+fAmount+"\n"
                           "Total Paid Fee: " + PaidList[i]+"\n"
-                            "Pending Dues: " + PendingList[i] + "Out of " + FeeList[i];
+                            "Pending Dues: " + PendingList[i] + " Out of " + FeeList[i];
 
             QMessageBox::information(this, "Success Message", msg);
 
@@ -67,6 +71,12 @@ void MainWindow::OnGetFee(const QString &roll, const QString &fAmount){
         QMessageBox::information(this, "Error Message", msg);
 
     }
+
+}
+
+
+void MainWindow::on_RecordFun()
+{
 
 }
 
