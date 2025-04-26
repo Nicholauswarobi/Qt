@@ -21,5 +21,9 @@ void IncomeDialog::on_Income_Done_Fun()
     QString IncomeAmount = ui->Income_Amount_lineEdit->text();
 
     emit getIncomeValue(IncomeType, IncomeAmount);
+
+    ui->Income_Amount_lineEdit->clear();
+    ui->Income_Type_lineEdit->clear();
+
 }
 

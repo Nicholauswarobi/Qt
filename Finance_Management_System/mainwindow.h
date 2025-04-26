@@ -24,6 +24,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    IncomeDialog incomeBox;
+    IncomeDialog *incomeBox;
 };
 #endif // MAINWINDOW_H

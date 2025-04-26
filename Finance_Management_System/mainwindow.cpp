@@ -25,7 +25,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Income_Fun()
 {
-    incomeBox.show();
+    incomeBox->show();
 }
 
 
