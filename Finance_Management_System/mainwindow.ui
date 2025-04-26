@@ -6,25 +6,156 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>573</width>
+    <height>442</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>21</height>
-    </rect>
-   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(142, 142, 212);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item alignment="Qt::AlignmentFlag::AlignTop">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(230, 130, 255);</string>
+      </property>
+      <property name="text">
+       <string>FINANCE MANAGEMENT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>376</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>376</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="Income_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>70</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	
+	background-color: rgb(25, 167, 9);
+	color: rgb(68, 51, 255);
+	border: 2px solid #e735ff;
+border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Income</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Expense_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>160</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	
+	background-color: rgb(209, 197, 255);
+	color: rgb(39, 180, 164);
+	border: 2px solid #e735ff;
+border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Expense</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Balance_pushButton">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>250</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(85, 85, 127);
+	color: rgb(194, 16, 40);
+	border: 2px solid #e735ff;
+border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Balance</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
