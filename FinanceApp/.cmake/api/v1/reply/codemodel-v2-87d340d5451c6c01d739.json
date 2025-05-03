@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-54beac1b40fb2e888cd5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Finance_Management_System",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Finance_Management_System::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Finance_Management_System-Debug-c6b7964a1e99041a6abe.json",
+					"name" : "Finance_Management_System",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Finance_Management_System_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Finance_Management_System_autogen-Debug-fbf198b498d527b758e8.json",
+					"name" : "Finance_Management_System_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Finance_Management_System_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Finance_Management_System_autogen_timestamp_deps-Debug-edb7419082d3840b3b41.json",
+					"name" : "Finance_Management_System_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Warobi/Desktop/Qt/Finance_Management_System/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Warobi/Desktop/Qt/Finance_Management_System"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
