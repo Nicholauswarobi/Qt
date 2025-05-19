@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(DatabaseConnections VERSION 0.1 LANGUAGES CXX)
+project(DB VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -20,29 +20,29 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(DatabaseConnections
+    qt_add_executable(DB
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET DatabaseConnections APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET DB APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(DatabaseConnections SHARED
+        add_library(DB SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(DatabaseConnections
+        add_executable(DB
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_link_libraries(DatabaseConnections PRIVATE
+target_link_libraries(DB PRIVATE
   Qt${QT_VERSION_MAJOR}::Widgets
   Qt${QT_VERSION_MAJOR}::Sql
 )
@@ -51,9 +51,9 @@ target_link_libraries(DatabaseConnections PRIVATE
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.DatabaseConnections)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.DB)
 endif()
-set_target_properties(DatabaseConnections PROPERTIES
+set_target_properties(DB PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -62,12 +62,12 @@ set_target_properties(DatabaseConnections PROPERTIES
 )
 
 include(GNUInstallDirs)
-install(TARGETS DatabaseConnections
+install(TARGETS DB
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(DatabaseConnections)
+    qt_finalize_executable(DB)
 endif()

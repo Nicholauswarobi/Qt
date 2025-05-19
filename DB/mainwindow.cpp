@@ -1,22 +1,15 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QSqlError>
-#include <QDebug>
-#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_pushButton_clicked);
 }
 
 MainWindow::~MainWindow()
 {
-
     delete ui;
 }
 
@@ -36,4 +29,6 @@ void MainWindow::on_pushButton_clicked()
     } else {
         qDebug() << "Connected successfully!";
     }
+
 }
+
